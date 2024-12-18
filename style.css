@@ -382,18 +382,22 @@ a:visited {
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .content-one-box h1{
         font-size: 36px !important;
-    }
-    .query-icon-center{
-        text-align: center !important;
     }
     .box-content{
         padding: 0;
     }
     .toparea,.navbar,.container-fluid{
         background-color: white !important;
+    }
+    .nav-link:hover{
+        background-color: #E9E7E7;
+    }
+    .container-fluid{
+        padding: 0 10px!important;
     }
     .nav-link{
         color: #000 !important;
@@ -402,10 +406,12 @@ a:visited {
         color: #000 !important;
     }
     #changecolorwhite:hover{
-        background-color: #f3f3f3;
+        background-color: #E9E7E7;
+    }
+    .query-icon-center{
+        text-align: center !important;
     }
 }
-
 @media screen and (max-width: 576px) {
     #nextblock{
         display: block;
