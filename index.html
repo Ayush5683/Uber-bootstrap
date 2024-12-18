@@ -22,7 +22,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation" style="color: #fff;">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon" style="background-color: white; color: red !important;"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
@@ -41,7 +41,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" onclick="showNav()"  style="cursor: pointer;">About <i
-                                                class="fa fa-angle-down"></i></a>
+                                            class="fa fa-angle-down" id="angledown"></i><i class="fa fa-angle-up" id="angleup" style="display: none;"></i></a>
                                         <ul id="nestedNav">
                                             <li class="nav-item">
                                                 <a class="nav-link" href="#">About us</a>
@@ -88,7 +88,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-sm-6 col-9">
+                <div class="col-sm-6 col-9" style="text-align: right;">
                     <ul class="nav-right" style="list-style: none;">
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fa fa-globe"></i> EN</a>
@@ -414,10 +414,10 @@
                 </div>
             </div>
             <div class="row" style="color: #afafaf;">
-                <div class="col-md-8 col-12 query-icon-center">
+                <div class="col-md-6 col-12 query-icon-center">
                     &copy;2024 Uber Technologies Inc.
                 </div>
-                <div class="col-md-4 col-12 query-icon-center" style="text-align: right;">
+                <div class="col-md-6 col-12 query-icon-center" style="text-align: right;">
                     <a href="#" class="icons icon-last">Privacy</a>
                     <a href="#" class="icons icon-last">Accessibility</a>
                     <a href="#" class="icons icon-last">Terms</a>

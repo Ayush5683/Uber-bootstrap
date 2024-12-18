@@ -12,34 +12,98 @@
 </head>
 <body>
     <!-- header -->
+    
     <header class="toparea">
-        <div class="container">
+        <div class="container-fluid" style="padding: 0 60px;">
             <div class="row">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#" style="font-size: 25px;">Uber</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
+                <div class="col-sm-6 col-3">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation" style="color: #fff;">
+                                <span class="navbar-toggler-icon" style="background-color: white; color: red !important;"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item" style="padding: 0;">
+                                        <a class="nav-link active" aria-current="page" href="#"
+                                            style="font-size: 24px;">Uber</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Rider</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Drive</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Business</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" onclick="showNav()"  style="cursor: pointer;">About <i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul id="nestedNav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">About us</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Our offerings</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">How uber works</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Impact</a></ li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Diversity, equality, and inclusion</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Sustainability</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href class="nav-link"="#">Explore</a>
+                                            </li>
+                                            <li class="nav-item">        
+                                               <a class="nav-link" href="#">Cities</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Newsroom</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Investor realtion</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">autonomous</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Blog</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Careers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
+                <div class="col-sm-6 col-9" style="text-align: right;">
+                    <ul class="nav-right" style="list-style: none;">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-globe"></i> EN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="changecolorwhite">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-white" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -206,7 +270,10 @@
             <div class="row">
                 <div class="col-12">
                     <h1 style="margin-bottom: 30px;">Frequently asked questions</h1>
-                    <a href="#">What is Uber’s Supplier Portal?</a>
+                    <a onclick="hideShow()" style=" transition: all 0.5s; cursor: pointer;">What is Uber’s Supplier Portal?
+                        <p class="hide" style="display: none;">Supplier Portal is a web-based fleet management tool that lets individuals, entrepreneurs, and business owners easily manage their fleet, drivers, and earnings on the Uber platform, with no cost.<a href="#" style="text-decoration: underline; padding: 0;border: none;">Go to Supplier Portal</a></p>
+                    </a>
+                    
                     <a href="#">Do I need a minimum number of vehicles to get started?</a>
                     <a href="#">How can I create an Uber supplier account?</a>
                     <a href="#">How can I get support?</a>
@@ -218,7 +285,7 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+    <footer class="footer animate-up">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -235,22 +302,22 @@
                     <h4>Company</h4>
                     <ul>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;About us</a>
                         </li>
                         <li>
-                            <a href="#">Our offerings</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Our offerings</a>
                         </li>
                         <li>
-                            <a href="#">Newsroom</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Newsroom</a>
                         </li>
                         <li>
-                            <a href="#">Investors</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Investors</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Blog</a>
                         </li>
                         <li>
-                            <a href="#">Careers</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Careers</a>
                         </li>
                     </ul>
                 </div>
@@ -258,25 +325,25 @@
                     <h4>Products</h4>
                     <ul>
                         <li>
-                            <a href="#">Ride</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Ride</a>
                         </li>
                         <li>
-                            <a href="#">Drive</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Drive</a>
                         </li>
                         <li>
-                            <a href="#">Deliver</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Deliver</a>
                         </li>
                         <li>
-                            <a href="#">Eat</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Eat</a>
                         </li>
                         <li>
-                            <a href="#">Uber for Business</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Uber for Business</a>
                         </li>
                         <li>
-                            <a href="#">Uber Freight</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Uber Freight</a>
                         </li>
                         <li>
-                            <a href="#">Gift cards</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Gift cards</a>
                         </li>
                     </ul>
                 </div>
@@ -284,13 +351,13 @@
                     <h4>Global citizenship</h4>
                     <ul>
                         <li>
-                            <a href="#">Safety</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Safety</a>
                         </li>
                         <li>
-                            <a href="#">Diversity and Inclusion</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Diversity and Inclusion</a>
                         </li>
                         <li>
-                            <a href="#">Sustainability</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Sustainability</a>
                         </li>
                     </ul>
                 </div>
@@ -298,10 +365,10 @@
                     <h4>Travel</h4>
                     <ul>
                         <li>
-                            <a href="#">Reserve</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Reserve</a>
                         </li>
                         <li>
-                            <a href="#">Cities</a>
+                            <a href="#"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;Cities</a>
                         </li>
                     </ul>
                 </div>
@@ -312,14 +379,14 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 20px;">
-                <div class="col-md-9 col-12">
+                <div class="col-md-8 col-12 query-icon-center">
                     <a href="#" class="icons"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="icons"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="icons"><i class="fa fa-youtube"></i></a>
                     <a href="#" class="icons"><i class="fa fa-linkedin"></i></a>
                     <a href="#" class="icons"><i class="fa fa-instagram"></i></a>
                 </div>
-                <div class="col-md-3 col-12">
+                <div class="col-md-4 col-12 query-icon-center" style="text-align: right;">
                     <a href="#" class="icons" style="padding: 10px; margin-right: 5px;">
                         <i class="fa fa-globe"></i> &nbsp;English
                     </a>
@@ -329,7 +396,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 query-icon-center">
                     <a href="#" class="images-app" style="text-decoration: none;">
                         <img src="Images/index/app-store-google-4d63c31a3e.svg" alt="" />
                     </a>
@@ -339,10 +406,10 @@
                 </div>
             </div>
             <div class="row" style="color: #afafaf;">
-                <div class="col-md-8 col-12" style="padding-left: 50px;">
+                <div class="col-md-6 col-12 query-icon-center">
                     &copy;2024 Uber Technologies Inc.
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-6 col-12 query-icon-center" style="text-align: right;">
                     <a href="#" class="icons icon-last">Privacy</a>
                     <a href="#" class="icons icon-last">Accessibility</a>
                     <a href="#" class="icons icon-last">Terms</a>
@@ -351,6 +418,6 @@
         </div>
     </footer>
 
-    <!-- fixed -->
+    <script src="fleet.js"></script>
 </body>
 </html>
