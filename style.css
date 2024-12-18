@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     /* background-color: blueviolet; */
     margin: 0;
@@ -35,7 +37,6 @@ body {
 
 .nav-link{
     padding: 05px 10px;
-    /* background-color: white; */
     margin: 0 10px;
     border-radius: 30px;
 }
@@ -54,6 +55,37 @@ body {
 .nav-link-white:hover{
     background-color: #e9e7e7;
 }
+
+.nav-item ul{
+    margin: 20px 0 0 10px;
+    padding: 7px 0;
+    list-style: none;
+    background-color: white;
+    /* color: #000 !important; */
+    border-radius: 0 0 7px 7px;
+    display: none;
+    position: absolute;
+}
+
+.nav-item ul li{
+    margin: 0;
+    padding: 0 10px;
+}
+
+.nav-item ul li a{
+    margin: 0;
+    padding: 8px 36px 8px 16px;
+    color: #000 !important;
+    border-radius: 0;
+}
+
+.nav-item ul li:hover{
+    background-color: #F3F3F3;
+}
+.nav-item ul li a:hover{
+    background-color: transparent;
+}
+
 
 /* Container one */
 .content-one {
@@ -77,13 +109,15 @@ body {
     font: 20px serif;
     border: none;
     display: block;
+    font-family: "Open Sans", serif;
+    outline: none;
 }
 
 .btn-primary {
     margin-top: 20px;
-    padding: 15px 20px !important;
+    padding: 12px 15px !important;
     border-radius: 12px !important;
-    font: bold 16px arial !important;
+    font: 16px arial !important;
     color: #000 !important;
     background-color: white !important;
     border: solid 1px transparent !important;
@@ -300,7 +334,7 @@ a:visited {
 .animate-right{
     animation: animate-right linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 20%;
 }
 
 @keyframes animate-right{
@@ -317,7 +351,7 @@ a:visited {
 .animate-scale{
     animation: animate-scale linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 20%;
 }
 @keyframes animate-scale{
     from{
@@ -327,6 +361,24 @@ a:visited {
     to{
         opacity: 1;
         scale: 1;
+    }
+}
+
+.animate-up{
+    animation: animate-up linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+@keyframes animate-up{
+    from{
+        /* opacity: 0; */
+        scale: 0;
+        /* transform: translateY(200px); */
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateY(0px); */
     }
 }
 
@@ -343,5 +395,30 @@ a:visited {
     .box-content{
         padding: 0;
     }
+    .toparea,.navbar,.container-fluid{
+        background-color: white !important;
+    }
+    .nav-link{
+        color: #000 !important;
+    }
+    #changecolorwhite{
+        color: #000 !important;
+    }
+    #changecolorwhite:hover{
+        background-color: #f3f3f3;
+    }
 }
-  
+
+@media screen and (max-width: 576px) {
+    #nextblock{
+        display: block;
+        margin: 5px 0;
+        border: none;
+        text-decoration: underline;
+    }
+    .nav-right{
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+    }
+}
