@@ -383,9 +383,6 @@ a:visited {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-right{
-        text-align: center !important;
-    }
     .content-one-box h1{
         font-size: 36px !important;
     }
@@ -415,10 +412,5 @@ a:visited {
         margin: 5px 0;
         border: none;
         text-decoration: underline;
-    }
-    .nav-right{
-        /* text-align: center; */
-        display: flex;
-        justify-content: center;
     }
 }
